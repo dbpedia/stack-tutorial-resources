@@ -1,0 +1,26 @@
+version: "3.0"
+services:
+  download:
+    image: dbpedia/minimal-download-client:latest
+    environment:
+      COLLECTION_URI: https://databus.dbpedia.org/jan/collections/large-cities/
+      TARGET_DIR: /root/data
+    volumes:
+      - ./data:/root/data
+  dbpedia-lookup:
+    image: lookup:latest
+    ports:
+      - 9273:8080
+    environment:
+      - DATA_PATH=/root/data/
+      - TDB_PATH=/root/tdb/
+      - CONFIG_PATH=/root/app-config.yml
+      - INDEX_MODE=BUILD_DISK
+      - CLEAN=true
+    volumes: 
+      - ./app-config.yml:/root/app-config.yml
+      - ./template.xsl:/root/template.xsl
+      - ./data:/root/data/
+      - ./index:/root/lucene-index/
+      - ./tdb:/root/tdb/
+

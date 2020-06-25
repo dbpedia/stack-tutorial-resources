@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+	    <groupId>stack-tutorial</groupId> <!-- needs to match parent pom -->
+        <artifactId>common-metadata</artifactId>  <!-- needs to match parent pom -->
+        <version>2020.07.01</version> <!-- needs to match parent pom -->
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>stack-tutorial</groupId>
+    <artifactId>cities</artifactId>
+    <packaging>jar</packaging>
+
+
+    <!-- artifact version could be overriden here -->
+    <version>2020.07.01</version>
+
+    <!-- properties could be overriden here -->
+    <properties>
+        <databus.license>http://purl.oclc.org/NET/rdflicense/cc-by-sa3.0</databus.license>
+    </properties>
+
+
+</project>
