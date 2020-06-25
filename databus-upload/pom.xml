@@ -14,7 +14,7 @@
     <!-- group id, part of the uri -->
     <groupId>stack-tutorial</groupId>
     
-    <!-- artifact id, part of the uri, can be overriden in artifact pom -->
+    <!-- fallback artifact id, part of the uri, can (and should) be overriden in artifact pom -->
     <artifactId>common-metadata</artifactId>
 
     <!-- version for all artifacts, part of the uri, can be overriden in artifact pom -->
