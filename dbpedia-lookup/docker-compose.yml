@@ -8,7 +8,7 @@ services:
     volumes:
       - ./data:/root/data
   dbpedia-lookup:
-    image: lookup:latest
+    image: dbpedia/lookup-application:latest
     ports:
       - 9273:8080
     environment:
@@ -21,6 +21,6 @@ services:
       - ./app-config.yml:/root/app-config.yml
       - ./template.xsl:/root/template.xsl
       - ./data:/root/data/
-      - ./index:/root/lucene-index/
+      - ./index:/root/index/
       - ./tdb:/root/tdb/
 
