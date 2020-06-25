@@ -14,10 +14,10 @@
     <!-- group id, part of the uri -->
     <groupId>stack-tutorial</groupId>
     
-    <!-- who dis - probably artifact id that will be override in artifact pom -->
+    <!-- fallback artifact id, part of the uri, can (and should) be overriden in artifact pom -->
     <artifactId>common-metadata</artifactId>
 
-    <!-- version for all artifacts -->
+    <!-- version for all artifacts, part of the uri, can be overriden in artifact pom -->
     <version>2018.08.15</version>
     
     <!-- includes child directories, has to match the folder names of your upload -->
